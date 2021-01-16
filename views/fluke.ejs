@@ -1,0 +1,92 @@
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/style/base.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/style/fluke.css" />
+
+      
+        <main class="main container-fluke container-fluid">
+            <div class="div-loader"></div>
+            <div class="bannerFluke">
+                <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!-- Wrapper for slides TODO rozne teksty w zaleeznosci od fluke czy nie-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="carousel-caption">
+                                <q class="bannerQuote">
+                           If more of us valued food and cheer and song above hoarded gold, it would be a merrier world.
+                        </q>
+                                <span class="bannerSpan"> ~~ J.R.R. Tolkien</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-caption ">
+                                <q class="bannerQuote">
+                           One cannot think well, love well, sleep well, if one has not dined well.
+                        </q>
+                                <span class="bannerSpan"> ~~ Virginia Woolf, A Room of One's Own</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-caption">
+                                <q class="bannerQuote">
+                           Ask not what you can do for your country. Ask what’s for lunch.
+                        </q>
+                                <span class="bannerSpan"> ~~ Orson Welles</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carouselFade" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
+               </a>
+               <a class="right carousel-control" href="#carouselFade" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
+               </a>
+            </div>
+         </div>
+         <section class="container-recipe">
+            <div class="content-title">
+               <h3 id="title-dish"></h3>
+            </div>
+            <div class="content-dish">
+               <div class="content-img">
+                  <img id="img-dish" src="" />
+               </div>
+
+               <div class="content-list-ingredients">
+                  <div>
+                     <h3>Ingredients</h3>
+                     <div class="list-ingredients-columns">
+                        <ul id="list-ingredients"></ul>
+                        <ul id="list-ingredients-col2"></ul>
+                     </div>
+                  </div>
+                  <div class="content-generate-list">
+                     <button class="button" id="button-generate-list">
+                        Generate a shopping list</button>
+                  </div>
+               </div>
+               <div class="content-add-icon">
+                  <button id="icon-add-recipe"></button> <!-- TODO logika :D -->
+               </div>
+            </div>
+            <div class="content-description">
+               <h3 class="instructions-title">Instructions</h3>
+            </div>
+            <div class="content-draw-recipe">
+               <button class="button" id="button-draw-recipe" style="visibility: hidden;">
+                  I'm feeling lucky</button>
+            </div>
+            <input type="radio" id="radio">
+            <label for="radio"></label>
+         </section>
+      </main>
+
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.2.0/jspdf.umd.min.js" type="module"></script> 
